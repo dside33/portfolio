@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Мое Портфолио</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+<style>
+  .navbar {
+    min-height: 80px; /* Устанавливаем минимальную высоту */
+  }
+</style>
+
+<header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Мое Портфолио</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Обо мне</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Проекты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <!-- Mainpage Content -->
+  <section id="home" class="text-left">
+    <div class="container d-flex align-items-center">
+      <div>
+        <h1 style="font-size: 2.5rem;">Привет, это мое портфолио!</h1>
+        <h1 style="font-size: 3.5rem;"><span class="highlight auto-type"></span></h1>
+        <a href="https://github.com/dside33" target="_blank" rel="noopener noreferrer" data-aos="fade-up">
+            <img src="img/github.png" alt="GitHub" style="width: 40px; height: 40px;">
+            github
+          </a>
+        <div class="mt-3" data-aos="fade-up">
+          <a href="files/resume.pdf" class="btn btn-primary btn-lg ml-2" download>Скачать резюме</a>
+        </div>
+      </div>
+      <div>
+        <img src="img/1.png" alt="My Image" class="img-fluid ml-3 float">
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('.auto-type', {
+      strings: ['Back End', 'Django'],
+      typeSpeed: 100,
+      backSpeed: 150,
+      loop: true,
+      loopCount: Infinity
+    });
+  </script>
+
+  <section id="about" class="text-center">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4">Обо мне</h1>
+      <p class="lead">Я Junior Django backend разработчик.</p>
+      <p class="lead">Специализируюсь на создании надежных веб-приложений, используя Django и другие современные технологии.</p>
+      <p class="lead">В свободное время увлекаюсь программированием и изучаю новые технологии. Всегда открыт для новых возможностей и вызовов, чтобы применить свои навыки и знания на практике.</p>
+      
+      <h2 class="mt-5">Технологии и инструменты</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-3 my-2" data-aos="fade-up">
+          <div class="tech-card d-flex align-items-center p-3 border rounded bg-white">
+            <img src="img/django.png" alt="Technology" class="img-fluid mr-2" style="height: 40px;">
+            <p class="mb-0">Django</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 my-2" data-aos="fade-up">
+          <div class="tech-card d-flex align-items-center p-3 border rounded bg-white">
+            <img src="img/postgresql.png" alt="Technology" class="img-fluid mr-2" style="height: 40px;">
+            <p class="mb-0">PostgreSQL</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 my-2" data-aos="fade-up">
+          <div class="tech-card d-flex align-items-center p-3 border rounded bg-white">
+            <img src="img/rest.webp" alt="Technology" class="img-fluid mr-2" style="height: 40px;">
+            <p class="mb-0">REST API</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 my-2" data-aos="fade-up">
+          <div class="tech-card d-flex align-items-center p-3 border rounded bg-white">
+            <img src="img/postman.svg" alt="Technology" class="img-fluid mr-2" style="height: 40px;">
+            <p class="mb-0">Postman</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 my-2" data-aos="fade-up">
+          <div class="tech-card d-flex align-items-center p-3 border rounded bg-white">
+            <img src="img/celery.png" alt="Technology" class="img-fluid mr-2" style="height: 40px;">
+            <p class="mb-0">Celery</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 my-2" data-aos="fade-up">
+          <div class="tech-card d-flex align-items-center p-3 border rounded bg-white">
+            <img src="img/redis.png" alt="Technology" class="img-fluid mr-2" style="height: 40px;">
+            <p class="mb-0">Redis</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 my-2" data-aos="fade-up">
+          <div class="tech-card d-flex align-items-center p-3 border rounded bg-white">
+            <img src="img/git.png" alt="Technology" class="img-fluid mr-2" style="height: 40px;">
+            <p class="mb-0">Git</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="text-center bg-light">
+    <div class="container">
+      <h1 class="display-4">Проекты</h1>
+      <p class="lead">Здесь представлены мои проекты.</p>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up">
+          <a href="https://github.com/dside33/NotificationsService" target="_blank" rel="noopener noreferrer" class="card-link">
+            <div class="card mb-4 shadow-sm">
+              <img src="img/project1.png" class="card-img-top small-img mx-auto d-block mt-4" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">NotificationsService</h5>
+                <p class="card-text">API-сервис рассылки экстренных сообщений на Django. При post запросе на эндпоинт с файлом пользователей происходит рассылка сообщений. Список пользователей с их контактами хранится в json/csv. (Django, DRF, Celery, Redis, Docker)</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <a href="https://github.com/dside33/PDF2MP3" target="_blank" rel="noopener noreferrer" class="card-link">
+            <div class="card mb-4 shadow-sm">
+              <img src="img/project2.png" class="card-img-top small-img mx-auto d-block mt-4" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">PDF2MP3</h5>
+                <p class="card-text">Приложение на Python по переводу PDF файла в mp3 формат</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <a href="https://github.com/dside33/test-task-1" target="_blank" rel="noopener noreferrer" class="card-link">
+            <div class="card mb-4 shadow-sm">
+              <img src="img/project3.png" class="card-img-top small-img mx-auto d-block mt-4" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">TestJunior</h5>
+                <p class="card-text">Тестовое задание на позицию Django-Junior. Простой сервис проведения тестирования по каким-либо темам. Т.е. есть тесты с вариантами ответов, тесты группируются в наборы тестов, которые затем пользователь может проходить и видеть свой результат.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="text-center">
+    <div class="container">
+      <h1 class="display-4">Контакты</h1>
+      <p>Email: avtovarnov@yandex.ru</p>
+    </div>
+  </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // JavaScript для плавного перехода
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+</body>
+</html>
